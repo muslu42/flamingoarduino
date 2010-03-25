@@ -7,11 +7,14 @@
 #ifndef WII_CHUCK_H
 #define WII_CHUCK_H
 
-#include "WConstants.h"
-#include "Wire.h"
+#include <WProgram.h>
+#include <Wire.h>
+
 
 #define WII_I2C_ADDR   0x52
 #define PACKAGE_LENGTH 6
+
+extern TwoWire Wire;
 
 class WiiChuck {
 
