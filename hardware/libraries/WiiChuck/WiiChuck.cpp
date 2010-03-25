@@ -17,7 +17,7 @@ void WiiChuck::init()
 
 void WiiChuck::initWithPower()
 {
-  initWithPowerPins(PC3, PC2);
+  initWithPowerPins(PORTC3, PORTC2);
 }
 
 void WiiChuck::initWithPowerPins(byte powerPin, byte gndPin)
