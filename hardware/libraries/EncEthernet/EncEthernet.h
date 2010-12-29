@@ -1,7 +1,7 @@
 /*
-  Ethernet library for Arduino ethernet shield
+  Ethernet library for Arduino ethernet shield/module
 
-  Copyright (c) 2008 Flamingo EDA.  All right reserved.
+  Copyright (c) 2010 Flamingo EDA.  All right reserved.
   http://www.flamingoeda.com
   flamingoeda@gmail.com
 
@@ -11,7 +11,7 @@
   version 2.1 of the License, or (at your option) any later version.
 
   This library is distributed in the hope that it will be useful,
-  but WITHOUT EthernetANY WARRANTY; without even the implied warranty of
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
   Lesser General Public License for more details.
 
@@ -21,8 +21,8 @@
 */
 
 
-#ifndef ETHERNET_H
-#define ETHERNET_H
+#ifndef ENC_ETHERNET_H
+#define ENC_ETHERNET_H
 
 #include <inttypes.h>
 #include "enc28j60.h"
@@ -30,11 +30,11 @@
 #include "net.h"
 
 
-class Ethernet
+class EncEthernet
 {
   public:
   
-  	Ethernet();
+  	EncEthernet();
 	  uint16_t E_fill_tcp_data_p(uint8_t *buf,uint16_t pos, const prog_char *progmem_s);
 	  uint16_t E_fill_tcp_data(uint8_t *buf,uint16_t pos, const char *s);
 		void E_enc28j60Init(uint8_t* macaddr);
